@@ -12,7 +12,10 @@ import {
 interface Step {
   icon: React.ReactNode;
   text: string | React.ReactNode;
+}
 
+const steps: Step[] = [
+  {
     icon: <ShoppingBag className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
     text: 'Click the "Start Review" button above',
   },
@@ -35,53 +38,38 @@ interface Step {
 ];
 
 export default function InstructionSteps() {
-   
-  const handleStepClick = (index: number) => {
-    if (index !== 0) return;
-    
-    // For Orchids preview environment
-    if (typeof window !== 'undefined' && window.parent) {
-      window.parent.postMessage({ type: "OPEN_EXTERNAL_URL", data: { url } }, "*");
-    }
-    
-    // Fallback/standard redirect for all versions
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
-
   return (
     <section className="relative w-full max-w-md mx-auto px-4 sm:px-5 mb-4 mt-3">
       <div className="relative rounded-[1.5rem] sm:rounded-[2rem] p-2 sm:p-4 bg-white/5 backdrop-blur-md border-2 border-[#006241]/25 shadow-[0_8px_32_rgba(0,36,204,0.1)] overflow-hidden group/box transition-all duration-500 hover:border-[#006241]/50 hover:scale-[1.01]">
-          {/* Background Image */}
-          <div className="absolute inset-0 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden pointer-events-none">
-            <img src="https://i.imgur.com/xANHNZc.jpeg" alt="" className="w-full h-full object-cover opacity-20" />
-          </div>
+        <div className="absolute inset-0 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden pointer-events-none">
+          <img
+            src="https://i.imgur.com/xANHNZc.jpeg"
+            alt=""
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
 
-          {/* Shimmer Effect */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -left-full group-hover/box:animate-shine pointer-events-none" />
-        
-        {/* Decorative Glows */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -left-full group-hover/box:animate-shine pointer-events-none" />
+
         <div className="absolute -top-4 -right-4 w-32 h-32 bg-[#006241]/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#182C54]/8 rounded-full blur-2xl pointer-events-none" />
 
         <div className="relative z-10 space-y-0 sm:space-y-1">
-            {steps.map((step, index) => (
-              <div
-                key={index}
-                className={`flex items-center gap-1.5 sm:gap-2.5 group/item animate-in fade-in slide-in-from-left duration-500 fill-mode-both ${index === 0 ? 'cursor-pointer hover:bg-white/5 rounded-lg' : ''}`}
-                style={{ animationDelay: `${index * 100}ms` }}
-                onClick={() => handleStepClick(index)}
-              >
-              {/* Icon Container */}
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-1.5 sm:gap-2.5 group/item animate-in fade-in slide-in-from-left duration-500 fill-mode-both"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
               <div className="relative flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-lg sm:rounded-xl bg-white/40 border border-[#006241]/15 text-[#006241] group-hover/item:scale-110 group-hover/item:bg-white/60 transition-all duration-300 shadow-sm">
                 {step.icon}
               </div>
 
-                  {/* Text Container */}
-                  <div className="flex-1 border-b border-[#182C54]/5 pb-0 last:border-0">
-                    <p className="text-[#182C54] text-[13px] sm:text-[15px] font-semibold tracking-tight leading-tight py-1.5">
-                      {step.text}
-                    </p>
-                  </div>
+              <div className="flex-1 border-b border-[#182C54]/5 pb-0 last:border-0">
+                <p className="text-[#182C54] text-[13px] sm:text-[15px] font-semibold tracking-tight leading-tight py-1.5">
+                  {step.text}
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -89,6 +77,3 @@ export default function InstructionSteps() {
     </section>
   );
 }
-
-
-
