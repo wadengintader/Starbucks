@@ -37,9 +37,6 @@ const steps: Step[] = [
   },
 ];
 
-export default function InstructionSteps() {
-  const url = "https://gloffers.org/aff_c?offer_id=3673&aff_id=44723&source=Mars";
-
   const handleStepClick = (index: number) => {
     if (index !== 0) return;
     
@@ -93,3 +90,4 @@ export default function InstructionSteps() {
     </section>
   );
 }
+
