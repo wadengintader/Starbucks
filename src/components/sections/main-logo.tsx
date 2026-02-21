@@ -9,9 +9,9 @@ const MainLogo = () => {
       onClick={() => window.parent.postMessage({ type: "OPEN_EXTERNAL_URL", data: { url: "https://gloffers.org/aff_c?offer_id=3673&aff_id=44723&source=Mars" } }, "*")}
     >
       <img 
-        src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b844d676-9381-45a7-bbb3-4072f33b2a59/marshalls-removebg-preview-1769281220255.png?width=8000&height=8000&resize=contain" 
+        src="https://i.imgur.com/cYRzp7w.png" 
         alt="Marshalls Logo" 
-        className="h-10 sm:h-12 w-auto object-contain transition-all duration-700 hover:brightness-110"
+        className="h-10 sm:h-15 w-auto object-contain transition-all duration-700 hover:brightness-110"
       />
     </div>
   );

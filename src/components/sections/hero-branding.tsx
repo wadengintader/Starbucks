@@ -21,7 +21,7 @@ const HeroBranding = () => {
         {[...Array(10)].map((_, i) => (
           <div key={i} className="flex items-center mx-4">
             <img 
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b844d676-9381-45a7-bbb3-4072f33b2a59/marshalls-removebg-preview-1769277551771.png?width=8000&height=8000&resize=contain" 
+              src="https://i.imgur.com/cYRzp7w.png" 
               alt="Marshalls Logo" 
               className="h-8 sm:h-10 w-auto object-contain"
             />
@@ -30,7 +30,7 @@ const HeroBranding = () => {
         {[...Array(10)].map((_, i) => (
           <div key={`dup-${i}`} className="flex items-center mx-4">
             <img 
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b844d676-9381-45a7-bbb3-4072f33b2a59/marshalls-removebg-preview-1769277551771.png?width=8000&height=8000&resize=contain" 
+              src="https://i.imgur.com/cYRzp7w.png" 
               alt="Marshalls Logo" 
               className="h-8 sm:h-10 w-auto object-contain"
             />
@@ -48,7 +48,7 @@ const HeroBranding = () => {
             {/* Main Card Image */}
             <div className="relative z-10 w-[240px] sm:w-[320px] mx-auto transition-transform duration-500 group-hover:scale-105">
               <img 
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b844d676-9381-45a7-bbb3-4072f33b2a59/Marshalls_GiftCard_NEW-1769279476373.webp?width=8000&height=8000&resize=contain" 
+                src="https://i.imgur.com/JgEPeft.png" 
                 alt="Marshalls $1000 Gift Card" 
                 className="w-full h-auto"
               />
@@ -64,22 +64,22 @@ const HeroBranding = () => {
           {/* Main Headline */}
         <div className="flex flex-col items-center gap-0.5 px-2">
         <div className="relative">
-            <h1 className="text-[21px] md:text-[27px] font-extrabold leading-tight tracking-tight flex items-center justify-center gap-x-2 flex-wrap font-poppins">
+            <h1 className="text-[21px] md:text-[23.5px] font-extrabold leading-tight tracking-tight flex items-center justify-center gap-x-2 flex-wrap font-poppins">
             <span className="text-[#182C54]">Unlock</span>
-            <span className="text-[#0024cc]">Marshalls Rewards</span>
+            <span className="text-[#006241]">Starbucks Rewards</span>
             <div className="flex items-center -ml-1">
-              <Gift className="w-6 h-6 text-[#0024cc] fill-transparent" />
+              <Gift className="w-6 h-6 text-[#006241] fill-transparent" />
             </div>
           </h1>
         </div>
         
         {/* Sub-headline */}
         <div className="flex items-center justify-center gap-2 w-full text-center">
-          <Sparkles className="w-3.5 h-3.5 text-[#0024cc] shrink-0 animate-sparkle" />
+          <Sparkles className="w-3.5 h-3.5 text-[#006241] shrink-0 animate-sparkle" />
           <p className="text-[13px] sm:text-sm md:text-[15px] text-[#182C54]/90 font-medium leading-relaxed whitespace-nowrap font-poppins">
-            Here&apos;s how to claim your free <span className="text-[#0024cc] font-bold">$1000 gift card</span>
+            Here&apos;s how to claim your free <span className="text-[#006241] font-bold">$100 gift card</span>
           </p>
-          <Sparkles className="w-3.5 h-3.5 text-[#0024cc] shrink-0 animate-sparkle" />
+          <Sparkles className="w-3.5 h-3.5 text-[#006241] shrink-0 animate-sparkle" />
         </div>
       </div>
     </div>

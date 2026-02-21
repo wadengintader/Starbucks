@@ -29,11 +29,11 @@ const steps: Step[] = [
   },
   {
     icon: <Gift className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
-    text: "Complete 3–5 featured partner offers",
+    text: "Complete 4–5 featured partner offers",
   },
   {
     icon: <Unlock className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
-    text: "Unlock your MARSHALLS Rewards",
+    text: "Unlock your STARBUCKS Rewards",
   },
 ];
 
@@ -54,12 +54,17 @@ export default function InstructionSteps() {
 
   return (
     <section className="relative w-full max-w-md mx-auto px-4 sm:px-5 mb-4 mt-3">
-      <div className="relative rounded-[1.5rem] sm:rounded-[2rem] p-2 sm:p-4 bg-white/5 backdrop-blur-md border-2 border-[#0024cc]/25 shadow-[0_8px_32_rgba(0,36,204,0.1)] overflow-hidden group/box transition-all duration-500 hover:border-[#0024cc]/50 hover:scale-[1.01]">
-        {/* Shimmer Effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -left-full group-hover/box:animate-shine pointer-events-none" />
+      <div className="relative rounded-[1.5rem] sm:rounded-[2rem] p-2 sm:p-4 bg-white/5 backdrop-blur-md border-2 border-[#006241]/25 shadow-[0_8px_32_rgba(0,36,204,0.1)] overflow-hidden group/box transition-all duration-500 hover:border-[#006241]/50 hover:scale-[1.01]">
+          {/* Background Image */}
+          <div className="absolute inset-0 rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden pointer-events-none">
+            <img src="https://i.imgur.com/xANHNZc.jpeg" alt="" className="w-full h-full object-cover opacity-20" />
+          </div>
+
+          {/* Shimmer Effect */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -left-full group-hover/box:animate-shine pointer-events-none" />
         
         {/* Decorative Glows */}
-        <div className="absolute -top-4 -right-4 w-32 h-32 bg-[#0024cc]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -top-4 -right-4 w-32 h-32 bg-[#006241]/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#182C54]/8 rounded-full blur-2xl pointer-events-none" />
 
         <div className="relative z-10 space-y-0 sm:space-y-1">
@@ -71,7 +76,7 @@ export default function InstructionSteps() {
                 onClick={() => handleStepClick(index)}
               >
               {/* Icon Container */}
-              <div className="relative flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-lg sm:rounded-xl bg-white/40 border border-[#0024cc]/15 text-[#0024cc] group-hover/item:scale-110 group-hover/item:bg-white/60 transition-all duration-300 shadow-sm">
+              <div className="relative flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-lg sm:rounded-xl bg-white/40 border border-[#006241]/15 text-[#006241] group-hover/item:scale-110 group-hover/item:bg-white/60 transition-all duration-300 shadow-sm">
                 {step.icon}
               </div>
 
