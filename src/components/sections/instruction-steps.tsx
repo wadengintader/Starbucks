@@ -12,10 +12,7 @@ import {
 interface Step {
   icon: React.ReactNode;
   text: string | React.ReactNode;
-}
 
-const steps: Step[] = [
-    {
     icon: <ShoppingBag className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
     text: 'Click the "Start Review" button above',
   },
@@ -92,5 +89,6 @@ export default function InstructionSteps() {
     </section>
   );
 }
+
 
 
