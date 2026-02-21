@@ -37,6 +37,8 @@ const steps: Step[] = [
   },
 ];
 
+export default function InstructionSteps() {
+   
   const handleStepClick = (index: number) => {
     if (index !== 0) return;
     
@@ -90,4 +92,5 @@ const steps: Step[] = [
     </section>
   );
 }
+
 
