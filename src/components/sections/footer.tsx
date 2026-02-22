@@ -39,7 +39,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <p className="text-[#182C54]/60 text-[10px] font-bold mb-4 tracking-tight italic">
-        © 2026 Startbucks Shopper Rewards. All rights reserved.
+        © 2026 Starbucks Shopper Rewards. All rights reserved.
       </p>
 
       {/* Disclaimer */}
@@ -53,4 +53,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
