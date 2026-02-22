@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Star, MoveRight } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 /**
  * CTAButton Component
@@ -39,7 +39,6 @@ export default function CTAButton() {
 
           <span className="text-[12px] sm:text-[14px] font-bold sm:font-black uppercase tracking-[0.08em] flex items-center gap-1.5 sm:gap-2">
             START REVIEW
-            <MoveRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-300 group-hover:translate-x-1" />
           </span>
 
           <Star 
@@ -58,3 +57,4 @@ export default function CTAButton() {
     </div>
   );
 }
+
