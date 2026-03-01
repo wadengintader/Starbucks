@@ -21,7 +21,7 @@ const steps: Step[] = [
   },
   {
     icon: <UserPlus className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
-    text: "Enter your email and basic shopper details",
+    text: "Enter your email and basic details",
   },
   {
     icon: <ClipboardList className="w-3 h-3 sm:w-3.5 sm:h-3.5" />,
@@ -77,4 +77,5 @@ export default function InstructionSteps() {
     </section>
   );
 }
+
 
