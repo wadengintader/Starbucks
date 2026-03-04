@@ -37,21 +37,16 @@ const Footer = () => {
           </a>
       </div>
 
-      {/* Copyright */}
+       {/* Copyright */}
       <p className="text-[#182C54]/60 text-[10px] font-bold mb-4 tracking-tight italic">
-        © 2026 Starbucks Shopper Rewards. All rights reserved.
+        © 2026 All rights reserved.
       </p>
-
-      {/* Disclaimer */}
-      <div className="max-w-sm mx-auto">
-        <p className="text-[#182C54]/40 text-[9px] leading-relaxed font-medium">
-          This independent reward program is not sponsored, endorsed, or administered by Starbucks or The Company, Inc. All brand names and logos are trademarks of their respective owners.
-        </p>
-      </div>
+      
     </footer>
   );
 };
 
 export default Footer;
+
 
 
